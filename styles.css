@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Noto Sans JP", sans-serif;
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: black;
+}
+
+.todo-header {
+	text-align: center;
+	font-size: 28px;
+	margin: 10px 0;
+	color: white;
+}
+
+.wrapper {
+	min-width: 400px;
+	padding: 40px 0;
+}
+
+.input {
+	padding: 10px;
+	border: 1px solid lightgray;
+	border-radius: 4px;
+	margin: 2px 0;
+	width: 100%;
+	font-size: 14px;
+	transition: 0.4s;
+}
+.input:focus,
+.edit-input:focus {
+	outline: none;
+	border-color: black;
+}
+
+.list-item {
+	padding: 10px;
+	background: lightgray;
+	border-radius: 4px;
+	margin: 2px 0;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 20px;
+	grid-gap: 10px;
+	cursor: pointer;
+	transition: 0.4s;
+	background-color: #ffdf00;
+	color: black;
+}
+
+.delete-icon {
+	color: #dd1628;
+}
+
+.edit-input {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid gray;
+	padding: 5px 5px 5px 10px;
+	font-size: 14px;
+	background-color: transparent;
+}
